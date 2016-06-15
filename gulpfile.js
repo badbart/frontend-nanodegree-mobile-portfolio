@@ -26,12 +26,15 @@ gulp.task('usemin', function() {
 });
 
 gulp.task('copy', function() {
-  console.log('Perfmatter copy task started');
+  console.log('copy task started');
   gulp.src('src/img/*.*')
     .pipe(gulp.dest('dist/img/'));
+
+  gulp.src('src/views/*/*.*')
+    .pipe(gulp.dest('dist/views/'));
 
   gulp.src('src/project-*.html')
     .pipe(gulp.dest('dist/'));
 
-  console.log('Perfmatter copy task finished');
+  console.log('copy task finished');
 });

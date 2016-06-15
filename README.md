@@ -21,7 +21,18 @@ On the Server Side i would set an expiry Date or different names on the css,js a
 I haven't changed anything on the other Project Pages, but there are some things to change there. Most of it is the same as on index. On these pages different Picture sizes would have been a possibility.
 
 ### Part 2 (Optimize Frames in pizza.html) 
+#### Pizzas in the Background
+* Made the two Images smaller, especially pizzeria.jpg was way to big
+* Added will-change: transform; to the .mover CSS Class so modern browsers will except changes and put the pizzas on a new compositor layer
+* Made the items variable of the updatePositions function global and write it only once
+* Removed height and width of the moving pizzas. The images are already the right size.
+* Only 50 Pizzas are created, still enough. 200 was way to much
 
+#### Pizza Size Change
+* dx and newwidth will only be calculated once and not in the loop because these values are the same for all pizzas
+* Created a variable to save all Pizzas in. This var is then used for the loop and accesing the size values
+
+I ignored all the other Problems and didn't use any optimisations like Minifications or Inline CSS. To get a better PageStore you would need to do much of the same as in part one. I also didn't lint this code.
 
 ## Build Process
 
