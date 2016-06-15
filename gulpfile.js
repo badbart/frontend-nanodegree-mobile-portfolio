@@ -35,5 +35,3 @@ gulp.task('copy', function() {
 
   console.log('Perfmatter copy task finished');
 });
-
-
