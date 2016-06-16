@@ -15,6 +15,7 @@ This is my Version of the Website Performance Optimization Portfolio Project for
 * I moved the perfmatter.js Script Tag to the Bottom just because i like it better there, because of the async this will not add any performance
 * I used compression on the profilepic.jpg Image reducing its size
 * CSS and JS Files will be minified and the style.css was inlined
+* Created a new and small Version of the pizzeria.jpg because only a small one is needed here
 
 On the Server Side i would set an expiry Date or different names on the css,js and image files so they can be cached. Also on the Server, i would activate compression.
 
@@ -22,11 +23,13 @@ I haven't changed anything on the other Project Pages, but there are some things
 
 ### Part 2 (Optimize Frames in pizza.html) 
 #### Pizzas in the Background
-* Made the two Images smaller, especially pizzeria.jpg was way to big
+* Made pizzeria.jpg smaller
 * Added will-change: transform; to the .mover CSS Class so modern browsers will except changes and put the pizzas on a new compositor layer
 * Made the items variable of the updatePositions function global and write it only once
-* Removed height and width of the moving pizzas. The images are already the right size.
+* Removed height and width of the moving pizzas. The images are already the right size after creating a new smaller one just for the moving ones
 * Only 50 Pizzas are created, still enough. 200 was way to much
+* Using GetElementByID instead of QuerySelector in function determineDx
+* Only get all the moving Pizzas once and save them
 
 #### Pizza Size Change
 * dx and newwidth will only be calculated once and not in the loop because these values are the same for all pizzas
