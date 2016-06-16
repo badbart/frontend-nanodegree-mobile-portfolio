@@ -8,8 +8,6 @@ var concat = require('gulp-concat');
 var usemin = require('gulp-usemin');
 var minifyHtml = require('gulp-htmlmin');
 
-gulp.task('default', ['usemin', 'copy']);
-
 gulp.task('usemin', function() {
   console.log('Perfmatter usemin task started');
 
@@ -38,3 +36,5 @@ gulp.task('copy', function() {
 
   console.log('copy task finished');
 });
+
+gulp.task('default', ['usemin', 'copy']);

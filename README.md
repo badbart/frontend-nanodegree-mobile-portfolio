@@ -2,6 +2,22 @@
 
 This is my Version of the Website Performance Optimization Portfolio Project for the Udacity Front End Developer Nanodegree
 
+## Build Process
+
+To Build you need Node / NPM. After you have this running open a Terminal and go to the root directory. Here Enter
+```
+npm install
+```
+This will install all needed Packages that are defined in the project.json File. After this all you have to do to build it is enter
+
+```
+gulp
+```
+This will run the default gulp Task, after it has finished the completed and done version will be in the dist Folder.
+
+
+Linting is done directly in the Editor while typing using WebStorm Default Tools + ESLint
+
 ## Changes
 
 ### Structure
@@ -37,18 +53,3 @@ I haven't changed anything on the other Project Pages, but there are some things
 
 I ignored all the other Problems and didn't use any optimisations like Minifications or Inline CSS. To get a better PageStore you would need to do much of the same as in part one. I also didn't lint this code.
 
-## Build Process
-
-To Build you need Node / NPM. After you have this running open a Terminal and go to the root directory. Here Enter
-```
-npm install
-```
-This will install all needed Packages that are defined in the project.json File. After this all you have to do to build it is enter
-
-```
-gulp
-```
-This will run the default gulp Task, after it has finished the completed and done version will be in the dist Folder.
-
-
-Linting is done directly in the Editor while typing using WebStorm Default Tools + ESLint
